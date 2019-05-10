@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:47:09 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/08 15:39:52 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/09 17:55:50 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,10 +120,10 @@ int			finalize(t_fragment *frag, char **line)
 
 int			get_next_line(const int fd, char **line)
 {
-	static t_fragment	*frags[4864];
+	static t_fragment	*frags[65336];
 	int					status;
 
-	if (fd < 0 || fd > 4863)
+	if (fd < 0 || fd > 65335)
 		return (-1);
 	if (line == 0)
 		return (-1);
